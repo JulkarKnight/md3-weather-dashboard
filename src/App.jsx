@@ -31,7 +31,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const API_KEY = '6883cbd9873dbfa20b4e00e8ed8329c0'; // <-- Paste your key here!
+  const API_KEY = import.meta.env.VITE_WEATHER_API_KEY; 
 
   useEffect(() => {
     const fetchWeatherAndForecast = async () => {
